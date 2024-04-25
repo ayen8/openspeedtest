@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  opeenspeedtest:
+    image: openspeedtest/latest
+    container_name: openspeedtest
+    ports:
+      - 3000:3000
+      - 3001:3001
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    restart: unless-stopped
