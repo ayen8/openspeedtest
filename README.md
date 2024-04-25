@@ -8,6 +8,19 @@
 
 - NGINX Docker image that runs NGINX as a non root, unprivileged user.
  
+ ###  Docker build instructions:
+
+ Build Docker and run the following command!
+
+````bash
+
+git clone https://github.com/ayen8/openspeedtest
+
+cd openspeedtest
+
+docker build -t ayen8/openspeedtest .
+
+````
  ###  Docker install instructions:
 
  Install Docker and run the following command!
